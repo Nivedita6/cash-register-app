@@ -13,7 +13,7 @@ checkButton.addEventListener("click", function validateBillAndCashAmount(){
             const amountToBeReturned = cashGiven.value - billAmount.value;
             calculateChange(amountToBeReturned);
         }else{
-            showMessage("The cash provided should atleast be equal to the bill amount.");
+            showMessage("Do u want to wash dishes?");
         }
     }else{
         showMessage("Invalid amount");
