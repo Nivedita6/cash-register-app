@@ -1,7 +1,61 @@
+*{
+    box-sizing: border-box;
+}
 
+body{
+   max-width: 50vw;
+   margin: 0 auto;
+   color: beige;
+}
 
 .container{
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     width: 50vw;
+    text-align: center;
+    background-color: #164e63;
 }
+
+.description{
+    font-size: large;
+    padding-bottom: 1rem;
+}
+
+.input-style{
+    max-width: 15%;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    margin: 1em auto;
+}
+
+#check-button{
+    width: 15%;
+    color: beige;
+    padding: 0.5rem;
+    background-color: #164e63;
+    font-weight: bold;
+    font-size: large;
+    border: none;
+    cursor: pointer;
+    margin: 1rem auto;
+    transition-duration: 0.4s;
+}
+
+#check-button:hover{
+    background-color: beige;
+    color: #164e63;
+}
+
+#change-table{
+    font-size: 1.2rem;
+    border-collapse: collapse;
+    margin: 1rem;
+}
+
+#change-table td, #change-table th{
+    border: 1px solid #ddd;
+    padding: 1rem;
+    
+}
+
