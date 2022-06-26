@@ -29,7 +29,7 @@ body{
     margin: 1em auto;
 }
 
-#check-button{
+button{
     width: 15%;
     color: beige;
     padding: 0.5rem;
@@ -42,10 +42,15 @@ body{
     transition-duration: 0.4s;
 }
 
-#check-button:hover{
+button:hover{
     background-color: beige;
     color: #164e63;
 }
+
+.hide-cashGiven{
+    
+}
+
 
 #change-table{
     font-size: 1.2rem;
