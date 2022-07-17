@@ -38,7 +38,7 @@ button{
     font-size: large;
     border: none;
     cursor: pointer;
-    margin: 1rem auto;
+    margin: 0.5rem auto;
     transition-duration: 0.4s;
 }
 
@@ -47,15 +47,11 @@ button:hover{
     color: #164e63;
 }
 
-.hide-cashGiven{
-    
-}
-
 
 #change-table{
     font-size: 1.2rem;
     border-collapse: collapse;
-    margin: 1rem;
+    margin: 1rem auto;
 }
 
 #change-table td, #change-table th{
@@ -64,3 +60,6 @@ button:hover{
     
 }
 
+input, label{
+    display: block;
+}

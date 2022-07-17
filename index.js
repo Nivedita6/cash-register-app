@@ -13,15 +13,25 @@ hideCashGiven.style.display = "none";
 hidetable.style.display = "none";
 
 nextbtn.addEventListener("click", function(){
-    hideCashGiven.style.display = "block";
-    hidetable.style.display = "block";
+    if(Number(billAmount.value) <= 0){
+        hideCashGiven.style.display = "none";
+        hidetable.style.display = "none";
+        showMessage("Give a valid amount");
+    }else{
+        showMessage("");
+        hideCashGiven.style.display = "block";
+       
+    }
+    
 } );
+
 
 
 checkButton.addEventListener("click", function validateBillAndCashAmount(){
     hideMessage();
     if(billAmount.value > 0){
         if(Number(cashGiven.value) >= Number(billAmount.value)){
+            hidetable.style.display = "block";
             const amountToBeReturned = cashGiven.value - billAmount.value;
             calculateChange(amountToBeReturned);
         }else{
